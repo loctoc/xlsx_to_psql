@@ -1,0 +1,168 @@
+[
+    {
+      "header": "Form Name",
+      "sqlColumn": "form_name",
+      "fieldType": "string"
+    },
+    {
+      "header": "Submission Number",
+      "sqlColumn": "submission_number",
+      "fieldType": "string",
+      "primary": true,
+      "notNull": true
+    },
+    {
+      "header": "Sent At",
+      "sqlColumn": "sent_at",
+      "fieldType": "timestamp",
+      "needIndex": true,
+      "notNull": true
+    },
+    {
+      "header": "Sender Name",
+      "sqlColumn": "sender_name",
+      "fieldType": "string",
+      "needIndex": true
+    },
+    {
+      "header": "Sender Identifier",
+      "sqlColumn": "sender_identifier",
+      "fieldType": "string",
+      "needIndex": true
+    },
+    {
+      "header": "Sender Department",
+      "sqlColumn": "sender_department",
+      "fieldType": "string"
+    },
+    {
+      "header": "Sender Designation",
+      "sqlColumn": "sender_designation",
+      "fieldType": "string"
+    },
+    {
+      "header": "Sender Location",
+      "sqlColumn": "sender_location",
+      "fieldType": "string",
+      "needIndex": true
+    },
+    {
+      "header": "Sender Division",
+      "sqlColumn": "sender_division",
+      "fieldType": "string"
+    },
+    {
+      "header": "Sender Sub Division",
+      "sqlColumn": "sender_sub_division",
+      "fieldType": "string"
+    },
+    {
+      "header": "Current Status",
+      "sqlColumn": "current_status",
+      "fieldType": "string",
+      "needIndex": true
+    },
+    {
+      "header": "Remarks",
+      "sqlColumn": "remarks",
+      "fieldType": "string"
+    },
+    {
+      "header": "Name",
+      "sqlColumn": "name",
+      "fieldType": "string"
+    },
+    {
+      "header": "Stage 1: Date",
+      "sqlColumn": "stage_1_date",
+      "fieldType": "timestamp",
+      "needIndex": true
+    },
+    {
+      "header": "Stage 1: Name",
+      "sqlColumn": "stage_1_name",
+      "fieldType": "string"
+    },
+    {
+      "header": "Stage 1: Action",
+      "sqlColumn": "stage_1_action",
+      "fieldType": "string"
+    },
+    {
+      "header": "Stage 1: Location",
+      "sqlColumn": "stage_1_location",
+      "fieldType": "string"
+    },
+    {
+      "header": "Location",
+      "sqlColumn": "location",
+      "fieldType": "string",
+      "needIndex": true
+    },
+    {
+      "header": "Please select the Zone",
+      "sqlColumn": "zone",
+      "fieldType": "string",
+      "needIndex": true
+    },
+    {
+      "header": "Ambient Temperature Recorded",
+      "sqlColumn": "ambient_temperature",
+      "fieldType": "number"
+    },
+    {
+      "header": "Evidence",
+      "sqlColumn": "ambient_temperature_evidence",
+      "fieldType": "string"
+    },
+    {
+      "header": "Chiller Temperature Recorded",
+      "sqlColumn": "chiller_temperature",
+      "fieldType": "number"
+    },
+    {
+      "header": "Evidence",
+      "sqlColumn": "chiller_temperature_evidence",
+      "fieldType": "string"
+    },
+    {
+      "header": "Old Meat Chiller Temperature Recorded",
+      "sqlColumn": "old_meat_chiller_temperature",
+      "fieldType": "number"
+    },
+    {
+      "header": "Evidence",
+      "sqlColumn": "old_meat_chiller_evidence",
+      "fieldType": "string"
+    },
+    {
+      "header": "Freezer Temperature Recorded",
+      "sqlColumn": "freezer_temperature",
+      "fieldType": "number"
+    },
+    {
+      "header": "Evidence",
+      "sqlColumn": "freezer_temperature_evidence",
+      "fieldType": "string"
+    },
+    {
+      "header": "Milk Chiller Temperature",
+      "sqlColumn": "milk_chiller_temperature",
+      "fieldType": "number"
+    },
+    {
+      "header": "Evidence",
+      "sqlColumn": "milk_chiller_evidence",
+      "fieldType": "string"
+    },
+    {
+      "header": "New Meat Chiller Temperature Recorded",
+      "sqlColumn": "new_meat_chiller_temperature",
+      "fieldType": "number"
+    },
+    {
+      "header": "Evidence",
+      "sqlColumn": "new_meat_chiller_evidence",
+      "fieldType": "string"
+    }
+  ]
