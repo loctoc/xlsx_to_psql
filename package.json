@@ -1,6 +1,6 @@
 {
   "name": "xlsx_to_psql",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Transfer Excel/CSV data to PostgreSQL tables",
   "type": "module",
   "bin": {
@@ -31,7 +31,8 @@
     "lib/"
   ],
   "scripts": {
-    "test": "vitest",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "prepare": "husky install"
   },
