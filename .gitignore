@@ -57,3 +57,5 @@ coverage/
 
 # Common files and directories
 *.log
+
+*.config
