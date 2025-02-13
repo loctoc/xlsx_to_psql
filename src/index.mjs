@@ -88,12 +88,12 @@ async function main() {
       argv.inputFile,
       argv.tableConfig,
       argv.timezone,
-      async ({ columns, transformedData, emptyRows, skippedRows, tableConfig, sheetId }) => {
+      async ({ columns, transformedData, summary, tableConfig, sheetId }) => {
         // 4. Create temporary table with timestamp-suffixed indexes
         const timestamp = moment().format('YYYYMMDDHHMMSS');
         const tableName = argv.table + `_sheet${sheetId}`;
         const { tmpTableName } = await createTempTable(tableName, columns, tableConfig, timestamp);
-
+        const {emptyRows = 0, skippedRows = 0, totalRows = 0} = summary;
         // 5. Insert data in batches
         console.log('\nInserting data...');
         let insertedRows = 0;
@@ -117,7 +117,7 @@ async function main() {
         const summaryData = {
           inputFile: path.basename(argv.inputFile),
           tableName: tableName,
-          totalRows: transformedData.length + emptyRows + skippedRows,
+          totalRows: totalRows + emptyRows + skippedRows,
           validRows: insertedRows,
           emptyRows,
           skippedRows,
