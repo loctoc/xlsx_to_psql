@@ -1,6 +1,6 @@
 {
   "name": "xlsx_to_psql",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Transfer Excel/CSV data to PostgreSQL tables",
   "type": "module",
   "bin": {
